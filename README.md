@@ -23,16 +23,21 @@ Install RStudio on my laptop from a local CRAN Mirror. With R being open source,
 **Step 2**
 Once I had the data frame, it was then fairly simple to install the collapsible tree package
 
+```R 
 install.packages("collapsibleTree")
+```
 
 **Step 3**
 Call the library associated with this package
 
+```R 
 library(collapsibleTree)
+```
 
 **Step 4**
 Declare the data frame
 
+```R 
   ga4_ <- data.frame(
     level = c(
       NA,'event_','event_','event_','event_','event_','event_','event_','event_','event_','event_params','event_params','event_params.value','event_params.value','event_params.value','event_params.value','event_','event_','event_','privacy_info','privacy_info','privacy_info','event_','user_properties','user_properties','user_properties.value','user_properties.value','user_properties.value','user_properties.value','user_properties.value','event_','event_','user_ltv','user_ltv','event_','device','device','device','device','device','device','device','device','device','device','device','device','device','device.web_info','device.web_info','device.web_info','event_','geo','geo','geo','geo','geo','geo','event_','app_info','app_info','app_info','app_info','event_','traffic_source','traffic_source','traffic_source','event_','event_','event_','ecommerce','ecommerce','ecommerce','ecommerce','ecommerce','ecommerce','ecommerce','ecommerce','ecommerce','ecommerce','ecommerce','event_','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items','items'
@@ -44,9 +49,11 @@ Declare the data frame
       'RECORD','STRING','INTEGER','STRING','RECORD','INTEGER','FLOAT','INTEGER','INTEGER','RECORD','STRING','RECORD','STRING','INTEGER','FLOAT','FLOAT','STRING','STRING','RECORD','STRING','STRING','STRING','RECORD','STRING','RECORD','STRING','INTEGER','FLOAT','FLOAT','INTEGER','INTEGER','RECORD','FLOAT','STRING','RECORD','STRING','STRING','STRING','STRING','STRING','STRING','STRING','STRING','STRING','STRING','INTEGER','BOOLEAN','RECORD','STRING','STRING','STRING','RECORD','STRING','STRING','STRING','STRING','STRING','STRING','RECORD','STRING','STRING','STRING','STRING','RECORD','STRING','STRING','STRING','STRING','STRING','RECORD','INTEGER','FLOAT','FLOAT','ecommerce.refund_value_in_usd','FLOAT','FLOAT','FLOAT','FLOAT','FLOAT','STRING','INTEGER','RECORD','STRING','STRING','STRING','STRING','STRING','STRING','STRING','STRING','STRING','FLOAT','FLOAT','INTEGER','FLOAT','FLOAT','FLOAT','FLOAT','STRING','STRING','STRING','STRING','STRING','STRING','STRING','STRING','STRING','STRING'
     )
   )
-  
+ ```
+ 
 **Step 5**
 And lastly, call the package referencing the data frame
 
+```R  
 collapsibleTreeNetwork(ga4_, attribute = "variableType", collapsed = TRUE)
-
+```
