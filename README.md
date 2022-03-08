@@ -2,7 +2,7 @@
 # Interactive GA4 Schema
 This is a description of your project or client, with space below it to record further detail or a list of contents.
 
-**What & Why**
+### **What & Why**
 One of the great features of Google Analytics 4 (GA4) is the ability to pass data into BigQuery (BQ). There are many benefits to this which have already been covered in the previous blog, 10 reasons to export your GA4 data to BigQuery. Passing data to BigQuery is no longer just available to enterprise GA360 customers but to anyone using GA4 for free.
 
 What I wanted to create was a simple interactive way to explore how GA4 data is saved in BigQuery. I found the GA360 interactive schema, set up here, a handy way to know where different elements can be found in the BQ schema, what I'd need to unnest to get to them, and at times found fields I hadn't noticed were available (most recently total.sessionQualityDim).
@@ -17,24 +17,28 @@ In the interest of saving time, I skipped the scraping and tidying of data and s
 
 This is a summary of the steps involved to create the interactive schema using R, along with links to documentation I found helpful.
 
-**Step 1**
+
+### **Step 1**
 Install RStudio on my laptop from a local CRAN Mirror. With R being open source, this is a network of servers to be able to download and install the latest versions of R.
 
-**Step 2**
+
+### **Step 2**
 Once I had the data frame, it was then fairly simple to install the collapsible tree package
 
 ```R 
 install.packages("collapsibleTree")
 ```
 
-**Step 3**
+
+### **Step 3**
 Call the library associated with this package
 
 ```R 
 library(collapsibleTree)
 ```
 
-**Step 4**
+
+### **Step 4**
 Declare the data frame
 
 ```R 
@@ -51,7 +55,8 @@ Declare the data frame
   )
  ```
  
-**Step 5**
+ 
+### **Step 5**
 And lastly, call the package referencing the data frame
 
 ```R  
