@@ -1,5 +1,5 @@
 ![Measurelab logo](/measurelab_black.png)
-# [Project or Client index]
+# Interactive GA4 Schema
 This is a description of your project or client, with space below it to record further detail or a list of contents.
 
 **What & Why**
