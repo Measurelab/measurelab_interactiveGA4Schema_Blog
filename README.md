@@ -1,6 +1,5 @@
 ![Measurelab logo](/measurelab_black.png)
 # Interactive GA4 Schema
-This is a description of your project or client, with space below it to record further detail or a list of contents.
 
 ### **What & Why**
 One of the great features of Google Analytics 4 (GA4) is the ability to pass data into BigQuery (BQ). There are many benefits to this which have already been covered in the previous blog, [10 reasons to export your GA4 data to BigQuery](https://www.measurelab.co.uk/blog/reasons-export-ga4-data-bigquery/). Passing data to BigQuery is no longer just available to enterprise GA360 customers but to anyone using GA4 for free.
