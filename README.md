@@ -26,15 +26,15 @@ Once installed, I then needed to figure out the basics of R. [This video tutoria
 
 
 ### **Step 3**
-The interactive schema uses the collapsabletree package. This needed a one off installation on my laptop.  
-
+After I had understood the basics I then needed to install the collapsible tree package. This only needs ot be done once for your laptop or whenever you update the version of R. 
+  
 ```R 
 install.packages("collapsibleTree")
 ```
 
 
 ### **Step 4**
-Once installed I needed to call the library associated with this package
+Once installed I needed to call the library associated with this package.
 
 ```R 
 library(collapsibleTree)
@@ -60,7 +60,7 @@ Declare the data frame. As above this was pulled together manually to save time.
  
  
 ### **Step 6**
-Next step was to call the package referencing the data frame. This has been developed on from earlier iterations to add a custom fill, height, width and ensure the tree starts in a collabsed state. Other fields can also be declared as part of this with more details [here](https://cran.r-project.org/web/packages/collapsibleTree/collapsibleTree.pdf)
+Next step was to call the package referencing the data frame. This has been developed on from earlier iterations to add a custom fill, height, width and ensure the tree starts in a collapsed state. Other fields can also be declared as part of this with more details [here](https://cran.r-project.org/web/packages/collapsibleTree/collapsibleTree.pdf)
 
 ```R  
 collapsibleTreeNetwork(ga4_, attribute = "variableType", collapsed = TRUE, zoomable = FALSE, fill = "#66E251", height = 700, width = 1200)
